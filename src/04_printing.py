@@ -20,4 +20,4 @@ print('x is {0}, y is {1}, z is "{2}"' .format(x, round(y,2), z))
 
 # Finally, print the same thing using an f-string
 
-print('x is {x}, y is {round}, z is "I like turtles!"')
+print(f'x is {x}, y is {round}, z is "I like turtles!"')
