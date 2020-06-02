@@ -5,6 +5,7 @@
 x = 12
 
 def change_x():
+    global x
     x = 99
 
 change_x()
@@ -19,6 +20,7 @@ def outer():
     y = 120
 
     def inner():
+        nonlocal y # Can also declare y as part of an outer array or dictionary. nonlocal only works in Python 3
         y = 999
 
     inner()
@@ -27,6 +29,5 @@ def outer():
     # 999?
     # Note: Google "python nested function scope".
     print(y)
-
 
 outer()
